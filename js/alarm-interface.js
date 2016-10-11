@@ -10,13 +10,12 @@ $(document).ready(function(){
     // $('#setTime').text(result.get('h') + ":" + result.get('m'));
     $('#setTime').text(setTime.format('LLLL'));
     var duration = newAlarm.countDown(userMinute, setTime);
-    setInterval(function() {
+    var interval = setInterval(function() {
       duration = moment.duration(duration - 1000, 'milliseconds');
         $('.output').text(duration.minutes() + ":" + duration.seconds())
         if(duration.minutes() === 0 && duration.seconds() === 0) {
           $('.output').append("<br>" + "Time's Up!!");
-          // clearInterval(duration);
-          return;
+          clearInterval(interval);
         }
     }, 1000);
   });
