@@ -1,0 +1,16 @@
+h1, h3, h4{
+  text-align: center;
+}
+
+.alarm, .countdown {
+  display: none;
+}
+
+.output {
+  font-family: 'Goblin One', cursive;
+  font-size: 60px;
+}
+
+.red {
+  color: red;
+}
