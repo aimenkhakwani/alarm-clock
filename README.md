@@ -21,7 +21,7 @@ An alarm clock app that takes user input (in minutes) and counts down to it.
 
 ## Known Bugs
 
-_None yet_
+* When the countdown is running, and a second input is submitted through the form, the countdown tries to run them both. The countdown either needs to reach 00:00, or the page needs to be refreshed.
 
 ## Technologies Used
 
